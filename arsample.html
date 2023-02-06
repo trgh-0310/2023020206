@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="refresh" content="50; url=https://snoopy2121.github.io/20221222/ARkansei/index.video.html">
+        <!--<meta http-equiv="refresh" content="40; url=https://snoopy2121.github.io/20221222/ARkansei/index.video.html">-->
+        <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+        <script src="index3.js"></script>
+        <link rel="stylesheet" href="index3.css">
+      </head>
+      <body>
+        <a-scene
+        vr-mode-ui="enabled: false"
+        embedded
+        arjs="sourceType: webcam; debugUIEnabled: false;">
+            <img id="sakura" class="sakura" src="./seikeien1.png">
+            <a-assets>
+                <a-aerts-items id="dona" src="./タイトルなし.glb"></a-aeerts>
+                <a-asset-items id="obj" src="./naozane9.obj" ></a-asset-items>
+                <a-assets-items id="mtl" src="./naozane9.mtl"></a-assets-items>
+              </a-assets>
+            <a-camera gps-camera rotation-reader> </a-camera>
+            <a-mixin
+                id="poster"
+                geometry="primitive: plane;"
+                material="color: white; shader: flat"
+                material="shader: flat"
+                position="0 0 0.055"
+            ></a-mixin>
+            <!--<a-entity highlight>
+                <a-entity position="0 1.6 -2.5">
+                    <a-entity material="src: #kyubi" mixin="poster"></a-entity>
+                </a-entity>
+            </a-entity>-->
+            <!--<a-image
+            class="#sakura"
+            src="#sakura"
+            position="10.5 30 -6"
+            gps-entity-place="latitude:36.14439224195439; longitude: 139.38235078662788;"
+            scale="50 50 50"
+                ></a-image>-->
+            <!--<a-entity material="src: #dona" mixin="poster"></a-entity>-->
+            <!--<a-image
+            id="kyu"
+                class="#kyu"
+                src=""
+                position="1 1.6 -2.5"
+                ></a-image>
+                <a-image
+            id="id3"
+                class="#kyu"
+                src=""
+                position="2 1.6 -2.5"
+                ></a-image>
+                <a-image
+            id="id4"
+                class="#kyu"
+                src="./kabotya.jpg"
+                position="3 1.6 -2.5"
+                ></a-image>-->
+            <a-obj-model
+            src="#obj"
+            mtl="#mtl"
+            gps-entity-place="latitude:36.14439224195439; longitude: 139.38235078662788;"
+            scale="1,1,1"
+            position="12 8.6 -3.5"
+            ></a-obj-model>
+        </a-scene>
+        <div style="position: fixed; bottom: 15px; ">
+            <!-- onclickの指定が誤っているので書き直し -->
+            <!-- <input type="button" id="b1" value="change" onclick="click1"> -->
+            <!--<input type="button" id="b1" value="change" onclick="location.href='//www.google.com'">-->
+            <!--<button onclick="history.back()">戻る</button>
+            <button onclick="location.href='https://snoopy2121.github.io/20221222/ARkansei/index.video.html'">スタンプをゲット！！</button>-->
+        </div>
+        <!--<input type="button" id="b2" value="change" onclick="add()">
+        <script>
+            let kyu=document.getElementById("kyu");
+            kyu.style.display.none;
+            function click1(){
+                window.open("https://www.google.com")
+            }
+            function add(){
+
+            }
+        </script>
+      
+        <script src="index3.js"></script>-->
+      </body>
+
+      <script>
+        /*window.addEventListener('load', () => {
+          const el = document.querySelector('[gps-entity-place]');
+          el.addEventListener('gps-entity-place-update-positon', (event) => {
+            if(event.detail.distance < 100) {
+              el.setAttribute('material');
+            } else {
+              el.setAttribute('material');
+            }
+            distanceMsg.style.display = 'none';
+            message.style.display = 'block';
+          });
+        });*/
+    </script>
+</html>
